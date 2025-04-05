@@ -8,10 +8,10 @@ import ScoreRecorder from '../../assets/project-images/scorerecorder.png';
 import TodoList from '../../assets/project-images/todolist.png';
 
 //import apks from assets folder
-import HelloWorldAPK from '../../assets/apk/helloworld.apk';
-import ScoreRecorderAPK from '../../assets/apk/scorerecorder.apk';
-import TodoListAPK from '../../assets/apk/todolist.apk';
-import FirebaseAPK from '../../assets/apk/firebase.apk';
+import HelloWorldAPK from '../../assets/apk/hello world.apk';
+import ScoreRecorderAPK from '../../assets/apk/Score Recorder.apk';
+import TodoListAPK from '../../assets/apk/To Do List.apk';
+import FirebaseAPK from '../../assets/apk/Firebase.apk';
 
 const ProjectPage = () => {
   const projects = new Array(6).fill(null); 
