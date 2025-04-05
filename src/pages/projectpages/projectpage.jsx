@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProjectPage.css';
+import './projectpage.css';
 
 //import images from assets folder
 import Firebase from '../../assets/project-images/firebase.png';
