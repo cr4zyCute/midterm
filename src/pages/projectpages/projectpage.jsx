@@ -7,6 +7,12 @@ import HelloWorld from '../../assets/project-images/helloworld.png';
 import ScoreRecorder from '../../assets/project-images/scorerecorder.png';
 import TodoList from '../../assets/project-images/todolist.png';
 
+//import apks from assets folder
+import HelloWorldAPK from '../../assets/apk/helloworld.apk';
+import ScoreRecorderAPK from '../../assets/apk/scorerecorder.apk';
+import TodoListAPK from '../../assets/apk/todolist.apk';
+import FirebaseAPK from '../../assets/apk/firebase.apk';
+
 const ProjectPage = () => {
   const projects = new Array(6).fill(null); 
 
@@ -16,31 +22,31 @@ const ProjectPage = () => {
     description: 'A simple Hello World app built with Flutter and Dart.',
     image: HelloWorld,
     tech: ['flutter', 'sqlite', 'dart'],
-    apkLink: 'https://yourdomain.com/downloads/firebaseapp.apk',
-    codeLink: 'https://github.com/yourusername/firebase-auth-app',
+    apkLink: 'HelloWorldAPK',
+    codeLink: 'https://github.com/cr4zyCute/hello_world.git',
   },
   {
     title: 'To-Do List App',
     description: 'A simple To-DO List app built with Flutter and Dart.',
     image: TodoList,
     tech: ['flutter', 'firebase', 'dart'],
-    apkLink: 'https://yourdomain.com/downloads/firebaseapp.apk',
-    codeLink: 'https://github.com/yourusername/firebase-auth-app',
+    apkLink: 'TodoListAPK',
+    codeLink: 'https://github.com/cr4zyCute/to_do_list_Acosta.git',
   },
   {
     title: 'Score Recorder',
     description: 'Simple Score Recorder app to record scores of Scores.',
     image: ScoreRecorder,
     tech: ['flutter', 'firebase', 'dart'],
-    apkLink: 'https://yourdomain.com/downloads/firebaseapp.apk',
-    codeLink: 'https://github.com/yourusername/firebase-auth-app',
+    apkLink: 'ScoreRecorderAPK',
+    codeLink: 'https://github.com/cr4zyCute/score_recorder-123.git',
   },
   {
     title: 'Firebase Auth App',
     description: 'Authentication system using Firebase.',
     image: Firebase,
-    apkLink: 'https://yourdomain.com/downloads/firebaseapp.apk',
-    codeLink: 'https://github.com/yourusername/firebase-auth-app',
+    apkLink: 'FirebaseAPK',
+    codeLink: 'https://github.com/cr4zyCute/firebase_activity.git',
     tech: ['flutter', 'firebase', 'dart'],
   },
 
@@ -57,10 +63,19 @@ const ProjectPage = () => {
         <div className="image-container">
           <img src={project.image} alt={project.title} />
               <div className="overlay">
-                <div className="buttons">
-                  <button className="download">Download</button>
-                  <button className="code">View Code</button>
-                </div>
+              <div className="buttons">
+                <button className="download" >
+                  <a href={project.apkLink} download>
+                    Download
+                  </a>
+                </button>
+                <button  className="code">
+                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                    View Code
+                  </a>
+                </button>
+
+              </div>
                 <div className="tech-icons">
                   {project.tech.map((tech, i) => (
                     <img key={i} src={`/assets/${tech}.png`} alt={tech} />
@@ -90,14 +105,10 @@ const ProjectPage = () => {
           <div className="image-container">
             <img src="/assets/sample-image.png" alt="project" />
             <div className="overlay">
-              <div className="buttons">
-                  <a className="download" href={project.apkLink} download>
-                    Download
-                  </a>
-                  <a className="code" href={project.codeLink} target="_blank" rel="noopener noreferrer">
-                    View Code
-                  </a>
-              </div>
+                 <div className="buttons">
+                  <button className="download">Download</button>
+                  <button className="code">View Code</button>
+                </div>
               <div className="tech-icons">
                 <img src="/assets/html.png" alt="html" />
                 <img src="/assets/css.png" alt="css" />
