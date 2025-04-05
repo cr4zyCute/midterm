@@ -1,6 +1,7 @@
 import '../firstpage/firstpage.css';
  // Make sure to place your image in /assets and adjust path accordingly.
 import Profile from '../../assets/profilepro.png';
+import Uc from '../../assets/page-under-construction-icon.jpg';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 
@@ -24,9 +25,10 @@ function FirstPage() {
     <p className="typing-wrapper">
       <span>{text}</span><Cursor cursorStyle='|' cursorColor='green' />
     </p>
-    <div className="bottom-image">
-      <img src="/assets/landscape.png" alt="landscape" />
-    </div>
+<div className="bottom-image">
+  <img src={Uc} alt="Under Construction" style={{ width: '50%', height: 'auto' }} />
+</div>
+
   </div>
 
   <div className="profile-image">

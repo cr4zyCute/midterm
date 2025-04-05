@@ -1,0 +1,140 @@
+.project-page {
+  background: black;
+  color: white;
+  padding: 60px 30px;
+  font-family: Arial, sans-serif;
+ 
+}
+
+.project-title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-subtitle {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-slider {
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+
+}
+/* For WebKit browsers */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* optional background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(blue, violet);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(violet, blue);
+}
+
+.project-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  color: black;
+  border-radius: 20px;
+  width: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  height: 200px;
+  background: #d4f2ff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .buttons button {
+  margin: 0 5px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.overlay .download {
+  background-color: red;
+}
+
+.overlay .code {
+  background-color: green;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.tech-icons img {
+  height: 30px;
+  width: auto;
+}
+
+
+/* Bottom Info */
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}

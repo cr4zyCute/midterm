@@ -1,0 +1,73 @@
+.second-page {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 14px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.info-card {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tech-icons img {
+  height: 50px;
+  object-fit: contain;
+}
+.tech-icons-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.tech-icons-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.tech-icon {
+  height: 50px;
+  margin-right: 40px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
