@@ -138,3 +138,9 @@
 .project-info h3 {
   margin-bottom: 10px;
 }
+.project-info p {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 0;
+}
