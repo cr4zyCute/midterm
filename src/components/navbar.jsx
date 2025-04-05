@@ -7,13 +7,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-container">
         <Link to="/" className="navbar-logo">Nikki Sixx</Link>
+      <div className="navbar-container">
         
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-         <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
-        <Link to="/portfolio" className="nav-link" onClick={() => setIsOpen(false)}>Portfolio</Link>
+        <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
+        <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About Me</Link>
         <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
 
         </div>

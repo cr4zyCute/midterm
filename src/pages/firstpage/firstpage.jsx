@@ -10,51 +10,31 @@ function FirstPage() {
         loop: true,
         typeSpeed: 120,
         deleteSpeed: 80,
-
     })
-  return (
-    <div className="firstpage">
-      <div className="left-icons">
-       
-      </div>
 
-      <div className="main-section">
-        <div className="intro-text">
-          <h1>Hi! I'm Nikki Sixx Acosta</h1>
-          <h4>id do!</h4>
-        <div className='typing-wrapper ' >
-          <span style={{ margin: '50px', width:'45px'}}>
-                <span style={{color: 'white' }}>
-                    {text}
-                    <Cursor cursorStyle='|' cursorColor='green' />
-                </span>
-            </span>
-        </div>
+    return (
+        <div className="firstpage">
+            <div className="left-icons">
+                {/* Your icon content here */}
+            </div>
 
-        </div>
-
-        <div className="profile-image">
-           <img src={Profile} alt="Profile" className="profile-image" />
-
-        </div>
-      </div>
-
-      {/* <div className="info-cards">
-        <div className="card">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud
-          </p>
-        </div>
-        <div className="card">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud
-          </p>
-        </div>
-      </div> */}
+<div className="main-section">
+  <div className="intro-text">
+    <h1 className="name">Hi! I'm Nikki Sixx Acosta</h1>
+    <p className="typing-wrapper">
+      <span>{text}</span><Cursor cursorStyle='|' cursorColor='green' />
+    </p>
+    <div className="bottom-image">
+      <img src="/assets/landscape.png" alt="landscape" />
     </div>
-  );
-}
+  </div>
 
+  <div className="profile-image">
+    <img src={Profile} alt="Profile" />
+  </div>
+</div>
+
+        </div>
+    );
+}
 export default FirstPage;

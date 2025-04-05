@@ -6,34 +6,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .main-section {
   display: flex;
+  flex-direction: row; /* changed from column */
   justify-content: space-between;
   align-items: center;
   width: 90%;
   max-width: 1200px;
-  margin-top: 40px;
-  gap: 40px;
+  margin: 40px auto;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-.intro-text {
-  flex: 1;
-}
-
-.intro-text h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.intro-text p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-}
 
 .profile-image {
   flex: 1;
@@ -41,11 +28,30 @@
 }
 
 .profile-image img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 0; /* remove circular effect */
+  object-fit: contain;
   
-  object-fit: cover;
+}
+
+
+.intro-text {
+  flex: 2;
+  text-align: left;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.typing-wrapper {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
 }
 
 .left-icons {
@@ -59,32 +65,48 @@
   z-index: 1000;
 }
 
-.left-icons img {
-  width: 35px;
-  height: 35px;
-  transition: transform 0.3s ease;
+.bottom-illustration {
+  margin-top: 30px;
+  text-align: left;
 }
 
-.left-icons img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
+.bottom-illustration img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
 }
-.span{
-    color:white
-}
+@media (max-width: 768px) {
+  .main-section {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+  }
 
+  .profile-image {
+    order: 1; /* Image on top */
+  }
 
+  .intro-text {
+    order: 2; /* Text below */
+  }
 
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    z-index: 100; 
+  }
 
+  .name {
+    font-size: 1.8rem;
+  }
 
+  .typing-wrapper {
+    font-size: 1.3rem;
+  }
 
-.typing-wrapper {
-  position: relative;
-  width: 22ch;
-  height: 40px;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  white-space: nowrap;
-  right: 15%;
+  .left-icons {
+    display: none;
+  }
 }
