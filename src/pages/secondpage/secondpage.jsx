@@ -1,5 +1,5 @@
 import React from 'react';
-import './secondPage.css'; // Import your CSS file
+import './secondpage.css'; // Import your CSS file
 
 const SecondPage = () => {
   return (
