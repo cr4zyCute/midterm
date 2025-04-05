@@ -1,0 +1,90 @@
+.firstpage {
+  background-color: #000;
+  color: white;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  
+  object-fit: cover;
+}
+
+.left-icons {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.left-icons img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.left-icons img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.span{
+    color:white
+}
+
+
+
+
+
+
+.typing-wrapper {
+  position: relative;
+  width: 22ch;
+  height: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+  right: 15%;
+}
