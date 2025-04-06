@@ -30,7 +30,7 @@
 .profile-image img {
   width: 300px;
   height: auto;
-  border-radius: 0; /* remove circular effect */
+  
   object-fit: contain;
   
 }
