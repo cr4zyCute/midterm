@@ -84,28 +84,14 @@ return (
           </div>
         ))}
       </div>
-
 <div className="tech-icons-container">
   <div className="tech-icons-track">
-      {[...techIcons, ...techIcons].map((icon, index) => (
-        <img
-          key={index}
-          src={icon.src}
-          alt={icon.alt}
-          className="tech-icon"
-        />
-      ))}
-          {/* Duplicate the same icons for seamless looping */}
-      {[...techIcons, ...techIcons].map((icon, index) => (
-        <img
-          key={index}
-          src={icon.src}
-          alt={icon.alt}
-          className="tech-icon"
-        />
-      ))}
+    {[...techIcons, ...techIcons].map((icon, index) => (
+      <img key={index} src={icon.src} alt={icon.alt} className="tech-icon" />
+    ))}
   </div>
 </div>
+
 
     </div>
   );

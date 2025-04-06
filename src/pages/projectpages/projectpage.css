@@ -106,7 +106,14 @@
   color: white;
   cursor: pointer;
 }
+.overlay .buttons a {
+  color: white;
+  text-decoration: none;
+}
 
+.overlay .buttons a:visited {
+  color: white;
+}
 .overlay .download {
   background-color: red;
 }

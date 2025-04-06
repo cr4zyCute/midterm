@@ -6,14 +6,22 @@
   import HelloWorld from '../../assets/project-images/helloworld.png';
   import ScoreRecorder from '../../assets/project-images/scorerecorder.png';
   import TodoList from '../../assets/project-images/todolist.png';
-
-
+  //import App Projects
+  import firebaselogo from '../../assets/programming-logo/firebaselogo.png';
+  import flutter from '../../assets/programming-logo/flutter.png';
+  import dart from '../../assets/programming-logo/dart.png';
+  import sqlite from '../../assets/programming-logo/sqlite.png';
+  //import Web Projects
+  import html from '../../assets/programming-logo/html.png';
+  import css from '../../assets/programming-logo/css.png';
+  import js from '../../assets/programming-logo/js.png';
 
   
 
   const ProjectPage = () => {
     const projects = new Array(6).fill(null); 
 
+  //app projects
     const appProjects = [
     {
       title: 'Hello World App',
@@ -27,15 +35,15 @@
       title: 'To-Do List App',
       description: 'A simple To-DO List app built with Flutter and Dart.',
       image: TodoList,
-      tech: ['flutter', 'firebase', 'dart'],
-        apkLink: '/apk/To-Do-List.apk',
+      tech: ['flutter', 'sqlite', 'dart'],
+      apkLink: '/apk/To-Do-List.apk',
       codeLink: 'https://github.com/cr4zyCute/to_do_list_Acosta.git',
     },
     {
       title: 'Score Recorder',
       description: 'Simple Score Recorder app to record scores of Scores.',
       image: ScoreRecorder,
-      tech: ['flutter', 'firebase', 'dart'],
+      tech: ['flutter', 'sqlite', 'dart'],
       apkLink: '/apk/Score-Recorder.apk',
       codeLink: 'https://github.com/cr4zyCute/score_recorder-123.git',
     },
@@ -48,7 +56,32 @@
       tech: ['flutter', 'firebase', 'dart'],
     },
 
+ ];
+
+  //web projects
+      const webProjects = [
+    {
+      title: 'Hello World App',
+      // description: 'A simple Hello World app built with Flutter and Dart.',
+      // image: HelloWorld,
+      // tech: ['flutter', 'sqlite', 'dart'],
+      // apkLink: '/apk/hello-world.apk',
+      // codeLink: 'https://github.com/cr4zyCute/hello_world.git',
+    },
+    
+
   ];
+
+  const techLogos = {
+  firebase: firebaselogo,
+  flutter: flutter,
+  dart: dart,
+  sqlite: sqlite,
+  html: html,
+  css: css,
+  js: js,
+};
+
 
     return (
     <div className="project-page">
@@ -72,11 +105,10 @@
                       View Code
                     </a>
                   </button>
-
                 </div>
                   <div className="tech-icons">
                     {project.tech.map((tech, i) => (
-                      <img key={i} src={`/assets/${tech}.png`} alt={tech} />
+                      <img key={i} src={techLogos[tech]} alt={tech}  />
                     ))}
                   </div>
                 </div>
@@ -93,7 +125,7 @@
       </div>
     </div>
 
-    {/* 👇 Duplicate section starts here */}
+    {/* WEB PROJECTS*/}
     <h2 className="project-subtitle">Website</h2>
 
     <div className="project-slider">
