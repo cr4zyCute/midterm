@@ -7,6 +7,8 @@
   import ScoreRecorder from '../../assets/project-images/scorerecorder.png';
   import TodoList from '../../assets/project-images/todolist.png';
 
+
+
   
 
   const ProjectPage = () => {
