@@ -1,8 +1,9 @@
 import '../firstpage/firstpage.css';
- // Make sure to place your image in /assets and adjust path accordingly.
+
 import Profile from '../../assets/profilepro.png';
-import Uc from '../../assets/page-under-construction-icon.jpg';
+import Uc from '../../assets/underconstruction.gif';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 
 
 function FirstPage() {

@@ -12,7 +12,7 @@
   import dart from '../../assets/programming-logo/dart.png';
   import sqlite from '../../assets/programming-logo/sqlite.png';
   //import Web Projects
-  import html from '../../assets/programming-logo/html.png';
+  import html from '../../assets/programming-logo/htmllogo.png';
   import css from '../../assets/programming-logo/css.png';
   import js from '../../assets/programming-logo/js.png';
 
@@ -58,19 +58,58 @@
 
  ];
 
-  //web projects
-      const webProjects = [
-    {
-      title: 'Hello World App',
-      // description: 'A simple Hello World app built with Flutter and Dart.',
-      // image: HelloWorld,
-      // tech: ['flutter', 'sqlite', 'dart'],
-      // apkLink: '/apk/hello-world.apk',
-      // codeLink: 'https://github.com/cr4zyCute/hello_world.git',
-    },
-    
-
-  ];
+    // Web projects
+    const webProjects = [
+      {
+        title: 'Sample Website 1',
+        description: 'A responsive website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website1.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+      {
+        title: 'Sample Website 2',
+        description: 'A portfolio website built with HTML, CSS, and JavaScript.',
+        image: '/assets/sample-image.png',
+        tech: ['html', 'css', 'js'],
+        codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
+      },
+    ];
 
   const techLogos = {
   firebase: firebaselogo,
@@ -128,35 +167,41 @@
     {/* WEB PROJECTS*/}
     <h2 className="project-subtitle">Website</h2>
 
-    <div className="project-slider">
-      <div className="project-wrapper">
-        {projects.map((_, index) => (
-          <div className="project-card" key={`web-${index}`}>
-            <div className="image-container">
-              <img src="/assets/sample-image.png" alt="project" />
-              <div className="overlay">
+          <div className="project-slider">
+        <div className="project-wrapper">
+          {webProjects.map((project, index) => (
+            <div className="project-card" key={`web-${index}`}>
+              <div className="image-container">
+                <img src={project.image} alt={project.title} />
+                <div className="overlay">
                   <div className="buttons">
-                    <button className="download">Download</button>
-                    <button className="code">View Code</button>
+                    <button className="download">
+                      Download
+                    </button>
+                    <button className="code">
+                      <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                        View Code
+                      </a>
+                    </button>
                   </div>
-                <div className="tech-icons">
-                  <img src="/assets/html.png" alt="html" />
-                  <img src="/assets/css.png" alt="css" />
-                  <img src="/assets/js.png" alt="js" />
+                  <div className="tech-icons">
+                    {project.tech.map((tech, i) => (
+                      <img key={i} src={techLogos[tech]} alt={tech} />
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              <div className="project-description-wrapper">
+                <div className="project-info">
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
                 </div>
               </div>
             </div>
-
-            <div className="project-description-wrapper">
-              <div className="project-info">
-                <h3>Website Title</h3>
-                <p>This project showcases responsive web design techniques using HTML, CSS, and JavaScript.</p>
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
   </div>
 
       

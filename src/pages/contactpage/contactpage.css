@@ -94,15 +94,19 @@
 }
 
 .social-icons {
-  margin-top: 30px;
   display: flex;
-  justify-content: center;
   gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.social-icons button {
-  background: none;
-  border: none;
-  font-size: 24px;
+.social-icons img {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
 }

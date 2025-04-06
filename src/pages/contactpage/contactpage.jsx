@@ -1,6 +1,13 @@
 import React from 'react';
 import './contactpage.css';
 
+import fb from '../../assets/social-logo/facebook.png';
+
+import gmail from '../../assets/social-logo/gmail.png';
+import github from '../../assets/social-logo/github.png';
+import linkedin from '../../assets/social-logo/linkedin.png';
+
+
 const Contact = () => {
   return (
     <div className="contact-container">
@@ -44,14 +51,24 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="social-icons">
-        <button>❌</button>
-        <button>🐱</button>
-        <button>📸</button>
-        <button>🔗</button>
-        <button>🧾</button>
-        <button>✈️</button>
-      </div>
+        <div className="social-icons">
+          <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <img src={fb} alt="Facebook" />
+          </a>
+          {/* <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <img src={insta} alt="Instagram" />
+          </a> */}
+          <a href="mailto:nikiskyacosta083@gmail.com">
+            <img src={gmail} alt="Gmail" />
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="GitHub" />
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="LinkedIn" />
+          </a>
+        </div>
+
     </div>
   );
 };
