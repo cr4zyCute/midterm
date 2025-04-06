@@ -1,17 +1,21 @@
   import React from 'react';
   import './projectpage.css';
 
-  //import images from assets folder
+   //import App Projectsr
   import Firebase from '../../assets/project-images/firebase.png';
   import HelloWorld from '../../assets/project-images/helloworld.png';
   import ScoreRecorder from '../../assets/project-images/scorerecorder.png';
   import TodoList from '../../assets/project-images/todolist.png';
-  //import App Projects
+
   import firebaselogo from '../../assets/programming-logo/firebaselogo.png';
   import flutter from '../../assets/programming-logo/flutter.png';
   import dart from '../../assets/programming-logo/dart.png';
   import sqlite from '../../assets/programming-logo/sqlite.png';
+
+
   //import Web Projects
+  import commingsooon from '../../assets/comingsoon.png';
+
   import html from '../../assets/programming-logo/htmllogo.png';
   import css from '../../assets/programming-logo/css.png';
   import js from '../../assets/programming-logo/js.png';
@@ -63,49 +67,49 @@
       {
         title: 'Sample Website 1',
         description: 'A responsive website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website1.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
       {
         title: 'Sample Website 2',
         description: 'A portfolio website built with HTML, CSS, and JavaScript.',
-        image: '/assets/sample-image.png',
+        image: commingsooon,
         tech: ['html', 'css', 'js'],
         codeLink: 'https://github.com/cr4zyCute/sample-website2.git',
       },
