@@ -3,17 +3,21 @@ body, html {
   padding: 0;
 }
 
-.navbar {
-  background-color:rgb(255, 255, 255);
+.navbar-firstpage {
+  background-color: white;
   color: black;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000; /* Ensure navbar is above other content */
+  z-index: 1000;
+  overflow: visible; /* Important to allow logo overflow */
+  display: flex;
+  align-items: center;
 }
 
-.navbar-container {
+
+.navbar-container-firstpage {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +28,19 @@ body, html {
   z-index: 1000; /* Ensure navbar is above other content */
 }
 
+.navbar-logo-firstpage .logo img {
+  height: 120px; /* Make it taller */
+  width: auto;
+  transform: translateY(20px); /* Pull it down visually */
+  transition: transform 0.3s ease;
+}
 
-.navbar-logo {
+/* Hover effect on the logo */
+.navbar-logo-firstpage:hover .logo img {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}
+
+.navbar-logo-firstpage {
   color: red;
   font-size: 1.5rem;
   font-weight: bold;
@@ -34,11 +49,11 @@ body, html {
 }
 
 
-.navbar-logo:hover {
+.navbar-logo-firstpage:hover {
   color: #3498db;
 }
 
-.navbar-links {
+.navbar-links-firstpage {
   display: flex;
   gap: 2rem;
   position: absolute;
@@ -47,7 +62,7 @@ body, html {
   margin-bottom: 15px;
 }
 
-.nav-link {
+.nav-link-firstpage {
   color: black; /* Previously was white */
   text-decoration: none;
   font-weight: 500;
@@ -55,11 +70,11 @@ body, html {
   position: relative;
 }
 
-.nav-link:hover {
+.nav-link-firstpage:hover {
   color: #3498db;
 }
 
-.nav-link::after {
+.nav-link-firstpage::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -70,11 +85,11 @@ body, html {
   transition: width 0.3s;
 }
 
-.nav-link:hover::after {
+.nav-link-firstpage:hover::after {
   width: 100%;
 }
 
-.navbar-toggle {
+.navbar-toggle-firstpage {
   display: none;
   background: none;
   border: none;
@@ -84,7 +99,7 @@ body, html {
 }
 
 @media (max-width: 768px) {
-  .navbar-links {
+  .navbar-links-firstpage {
     position: fixed;
     top: 70px;
     left: 0;
@@ -97,18 +112,18 @@ body, html {
     z-index: 999;
   }
 
-  .navbar-links.active {
+  .navbar-links.active-firstpage {
     transform: translateX(0);
   }
 
-  .nav-link {
+  .nav-link-firstpage {
     color: white; /* Fix: make links visible on dark bg */
     padding: 1rem;
     text-align: center;
     width: 100%;
   }
 
-  .navbar-toggle {
+  .navbar-toggle-firstpage {
     display: block;
     color: black; /* Ensure the ☰ icon is visible */
   }

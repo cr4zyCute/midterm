@@ -1,28 +1,28 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './navbar.css';
 
+import logo from '../assets/social-logo/logo.png'; 
+
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="navbar">
-        <Link to="/" className="navbar-logo">Nikki Sixx</Link>
-      <div className="navbar-container">
-        
-        <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-        <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About Me</Link>
-        <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
-
+    <nav className="navbar-firstpage">
+      <Link 
+        to="home" 
+        smooth={true} 
+        duration={500} 
+        className="navbar-logo-firstpage"
+      >
+        <div className="logo">
+          <img src={logo} alt="Logo" />
         </div>
-        
-        <button 
-          className="navbar-toggle"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? '✕' : '☰'}
-        </button>
+      </Link>
+
+      <div className="navbar-container-firstpage">
+        <div className="navbar-links-firstpage">
+          <Link to="home" smooth={true} duration={500} className="nav-link-firstpage">Home</Link>
+          <Link to="about" smooth={true} duration={500} className="nav-link-firstpage">About Me</Link>
+          <Link to="contact" smooth={true} duration={500} className="nav-link-firstpage">Contact</Link>
+        </div>
       </div>
     </nav>
   );

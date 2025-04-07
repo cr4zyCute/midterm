@@ -67,23 +67,45 @@ const SecondPage = () => {
   { src: xamarin, alt: 'xamarin' },
 
 ];
+const experiences = [
+  {
+    title: "Omnivitual Solutions",
+    description: "Developed the company website with responsive design and clean UI/UX."
+  },
+  {
+    title: "IPTV App - Bukid Net Wifi",
+    description: "Created a mobile IPTV app using Flutter, integrated with APIs and video player."
+  },
+  {
+    title: "Freelance Web Development",
+    description: "Built websites for clients, focused on responsiveness, accessibility, and performance."
+  },
+  {
+    title: "Academic Projects",
+    description: "Worked on several school projects using frontend, backend, and databases and Student Presentation "
+  }
+];
+
 return (
   <div className="second-page">
       <h1 className="about-title">About me</h1>
 
       <div className="about-description">
         <p>
-          <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <strong>Hi, I'm a Junior Developer, 3rd year BSIT student, and a passionate freelancer.</strong> I specialize in crafting responsive and modern web and mobile apps using technologies like HTML, CSS, JavaScript, Flutter, PHP, and more.
+              As a self-motivated learner and coder, I love solving real-world problems and turning ideas into digital solutions.
+              Currently, I'm focused on improving my backend skills, working with databases, and collaborating on freelance projects.
         </p>
       </div>
 
-      <div className="cards-grid">
-        {[1, 2, 3, 4].map((item) => (
-          <div className="info-card" key={item}>
-            <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</strong></p>
-          </div>
-        ))}
-      </div>
+    <div className="cards-grid">
+      {experiences.map((item, index) => (
+        <div className="info-card" key={index}>
+          <p><strong>{item.title}</strong></p>
+          <p>{item.description}</p>
+        </div>
+      ))}
+    </div>
 <div className="tech-icons-container">
   <div className="tech-icons-track">
     {[...techIcons, ...techIcons].map((icon, index) => (

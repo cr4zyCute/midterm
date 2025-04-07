@@ -19,6 +19,8 @@
   import html from '../../assets/programming-logo/htmllogo.png';
   import css from '../../assets/programming-logo/css.png';
   import js from '../../assets/programming-logo/js.png';
+  import react from '../../assets/programming-logo/react.png';
+  import javascript from '../../assets/programming-logo/javascript.png';
 
   
 
@@ -68,8 +70,8 @@
         title: 'Sample Website 1',
         description: 'A responsive website built with HTML, CSS, and JavaScript.',
         image: commingsooon,
-        tech: ['html', 'css', 'js'],
-        codeLink: 'https://github.com/cr4zyCute/sample-website1.git',
+        tech: ['react', 'css', 'javascript'],
+        codeLink: 'https://github.com/cr4zyCute/midterm.git',
       },
       {
         title: 'Sample Website 2',
@@ -123,6 +125,9 @@
   html: html,
   css: css,
   js: js,
+  react: react,
+  javascript: javascript,
+  
 };
 
 
