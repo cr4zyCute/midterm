@@ -1,6 +1,8 @@
   import React from 'react';
   import './projectpage.css';
 
+  import logo from '../../assets/social-logo/logo.png'; // Import your logo image
+
    //import App Projectsr
   import Firebase from '../../assets/project-images/firebase.png';
   import HelloWorld from '../../assets/project-images/helloworld.png';
@@ -21,8 +23,24 @@
   import js from '../../assets/programming-logo/js.png';
   import react from '../../assets/programming-logo/react.png';
   import javascript from '../../assets/programming-logo/javascript.png';
+  import bootstrap from '../../assets/programming-logo/bootsrap.png';
+  import vite from '../../../public/vite.svg';
 
-  
+    const techLogos = {
+      firebase: firebaselogo,
+      flutter: flutter,
+      dart: dart,
+      sqlite: sqlite,
+      html: html,
+      css: css,
+      js: js,
+      react: react,
+      javascript: javascript,
+      bootstrap: bootstrap,
+      vite: vite,
+
+      logo: logo,
+    };
 
   const ProjectPage = () => {
     const projects = new Array(6).fill(null); 
@@ -67,10 +85,11 @@
     // Web projects
     const webProjects = [
       {
-        title: 'Sample Website 1',
-        description: 'A responsive website built with HTML, CSS, and JavaScript.',
-        image: commingsooon,
-        tech: ['react', 'css', 'javascript'],
+        title: 'My Portfolio',
+        description: 'A responsive website built with React Vite, CSS, JavaScript and with a little bit of Bootstrap',
+        image: logo,
+        tech: ['react','vite', 'css', 'javascript','bootstrap'],
+        demolink: 'https://midterm-1opt.onrender.com',
         codeLink: 'https://github.com/cr4zyCute/midterm.git',
       },
       {
@@ -117,18 +136,7 @@
       },
     ];
 
-  const techLogos = {
-  firebase: firebaselogo,
-  flutter: flutter,
-  dart: dart,
-  sqlite: sqlite,
-  html: html,
-  css: css,
-  js: js,
-  react: react,
-  javascript: javascript,
-  
-};
+
 
 
     return (
@@ -185,7 +193,9 @@
                 <div className="overlay">
                   <div className="buttons">
                     <button className="download">
-                      Download
+                       <a href={project.demolink} target="_blank" rel="noopener noreferrer">
+                       Demo
+                      </a>
                     </button>
                     <button className="code">
                       <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
