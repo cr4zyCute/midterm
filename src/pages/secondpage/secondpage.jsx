@@ -87,7 +87,7 @@ const experiences = [
 ];
 
 return (
-  <div className="second-page">
+  <div id="about" className="second-page">
       <h1 className="about-title">About me</h1>
 
       <div className="about-description">
@@ -98,21 +98,21 @@ return (
         </p>
       </div>
 
-    <div className="cards-grid">
-      {experiences.map((item, index) => (
-        <div className="info-card" key={index}>
-          <p><strong>{item.title}</strong></p>
-          <p>{item.description}</p>
+          <div className="cards-grid">
+            {experiences.map((item, index) => (
+              <div className="info-card" key={index}>
+                <p><strong>{item.title}</strong></p>
+                <p>{item.description}</p>
+              </div>
+            ))}
+          </div>
+        <div className="tech-icons-container">
+          <div className="tech-icons-track">
+            {[...techIcons, ...techIcons].map((icon, index) => (
+              <img key={index} src={icon.src} alt={icon.alt} className="tech-icon" />
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-<div className="tech-icons-container">
-  <div className="tech-icons-track">
-    {[...techIcons, ...techIcons].map((icon, index) => (
-      <img key={index} src={icon.src} alt={icon.alt} className="tech-icon" />
-    ))}
-  </div>
-</div>
 
 
     </div>

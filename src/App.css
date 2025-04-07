@@ -1,4 +1,12 @@
 /* Sticky Navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-padding-top: 140px; /* or match your navbar height */
+}
+
 header {
     position: fixed;
     top: 0;
@@ -33,7 +41,8 @@ nav a:hover {
 section {
     background-color: black;
     color: white;
-    padding: 40px;
+    padding: 100px 20px;
+    min-height: 100vh;
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
     margin-top: 80px; /* Adjust for fixed navbar */

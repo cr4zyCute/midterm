@@ -14,7 +14,7 @@ import x from '../../assets/social-logo/x.png';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <h1>Hire Me!</h1>
       <div className="contact-content">
         <div className="contact-form">

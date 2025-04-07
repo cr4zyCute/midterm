@@ -18,7 +18,7 @@ function FirstPage() {
     })
 
     return (
-        <div className="firstpage">
+        <div id="home" className="firstpage">
             <div className="left-icons">
                 <div className="social-icons-firstpage">
                     <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">

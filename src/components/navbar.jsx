@@ -19,8 +19,12 @@ export default function Navbar() {
 
       <div className="navbar-container-firstpage">
         <div className="navbar-links-firstpage">
-          <Link to="home" smooth={true} duration={500} className="nav-link-firstpage">Home</Link>
-          <Link to="about" smooth={true} duration={500} className="nav-link-firstpage">About Me</Link>
+          <Link to="home" smooth={true} duration={500} className="nav-link-firstpage">
+            Home
+          </Link>
+          <Link to="about" smooth={true} duration={500} className="nav-link-firstpage">
+            About Me
+          </Link>
           <Link to="contact" smooth={true} duration={500} className="nav-link-firstpage">Contact</Link>
         </div>
       </div>
