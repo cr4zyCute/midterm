@@ -21,16 +21,16 @@ function FirstPage() {
         <div id="home" className="firstpage">
             <div className="left-icons">
                 <div className="social-icons-firstpage">
-                    <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <a href="https://web.facebook.com/CR4ZYCUTE/" target="_blank" rel="noopener noreferrer">
                         <img src={fb} alt="Facebook" />
                     </a>
-                    <a href="mailto:nikiskyacosta083@gmail.com">
+                    <a href="mailto:nikisixxacosta083@gmail.com">
                         <img src={gmail} alt="Gmail" />
                     </a>
-                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/cr4zyCute" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="GitHub" />
                     </a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/nikki-sixx-acosta-690246340/" target="_blank" rel="noopener noreferrer">
                         <img src={linkedin} alt="LinkedIn" />
                     </a>
                 </div>

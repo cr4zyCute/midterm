@@ -40,6 +40,7 @@
 .intro-text {
   flex: 2;
   text-align: left;
+  margin-top: 80px;
 }
 .social-icons-firstpage {
   display: flex;
@@ -112,6 +113,7 @@
 
   .intro-text {
     order: 2; 
+    margin-top: 10px;
   }
   .profile-image {
     display: flex;

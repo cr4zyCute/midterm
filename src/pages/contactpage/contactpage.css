@@ -84,7 +84,9 @@
   font-size: 14px;
   height: 50px; /* or adjust as needed */
 }
-
+.hire-me{
+  margin-top: 90px;
+}
 .icon-btn {
   background: #00aaff;
   color: white;

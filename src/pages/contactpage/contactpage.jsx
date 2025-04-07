@@ -15,7 +15,7 @@ import x from '../../assets/social-logo/x.png';
 const Contact = () => {
   return (
     <div id="contact" className="contact-container">
-      <h1>Hire Me!</h1>
+      <h1 className="hire-me">Hire Me!</h1>
       <div className="contact-content">
         <div className="contact-form">
           <input type="text" placeholder="Your name" />
